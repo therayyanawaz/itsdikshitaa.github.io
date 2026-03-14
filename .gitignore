@@ -12,6 +12,8 @@
 
 # testing
 /coverage
+/cypress/videos
+/cypress/screenshots
 
 # next.js
 /.next/
@@ -22,10 +24,13 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 /.swc/
 .eslintcache
 *.log
+.codex-dev.log
+.codex-dev.err
 
 
 # debug
