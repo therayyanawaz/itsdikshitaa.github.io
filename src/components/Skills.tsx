@@ -37,12 +37,9 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
         >
           <span className="section-kicker">Skills</span>
-          <h2 className="section-title">
-            Capabilities arranged to feel more like a studio sheet.
-          </h2>
+          <h2 className="section-title">Skills & Tools</h2>
           <p className="section-subtitle">
-            The categories below give the site a broader, more design-aware
-            profile while still being easy to replace with your actual strengths.
+            A concise overview of the technologies, tools, and professional strengths I bring to my work.
           </p>
         </motion.div>
 

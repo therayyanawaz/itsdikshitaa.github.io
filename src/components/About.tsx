@@ -23,12 +23,9 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <span className="section-kicker">About</span>
-          <h2 className="section-title">
-            Built to feel edited, not auto-filled.
-          </h2>
+          <h2 className="section-title">About Me</h2>
           <p className="section-subtitle">
-            The goal of this redesign is simple: make the portfolio feel more
-            authored, more memorable, and much less like a generic starter.
+            A brief introduction to my background, working style, and professional interests.
           </p>
 
           <div className="mt-8 space-y-5 text-[var(--color-text-muted)]">
@@ -56,8 +53,8 @@ export default function About() {
               </div>
               <div>
                 <p className="text-lg text-[var(--color-text)]">
-                  &ldquo;The strongest portfolios do more than list work. They
-                  reveal taste, judgment, and the way someone thinks.&rdquo;
+                  &ldquo;I believe strong work should be clear, thoughtful, and
+                  professionally presented.&rdquo;
                 </p>
                 <div className="mt-3 flex flex-wrap items-center gap-4 text-sm text-[var(--color-text-dim)]">
                   <span className="inline-flex items-center gap-2">

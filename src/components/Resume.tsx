@@ -23,12 +23,9 @@ export default function Resume() {
           transition={{ duration: 0.6 }}
         >
           <span className="section-kicker">Profile</span>
-          <h2 className="section-title">
-            A quick snapshot for recruiters, collaborators, and curious people.
-          </h2>
+          <h2 className="section-title">Professional Profile</h2>
           <p className="section-subtitle">
-            This section replaces the broken resume embed with a cleaner profile
-            summary and a simpler next step.
+            A quick summary of my background, availability, and the kind of opportunities I am looking for.
           </p>
         </motion.div>
 
@@ -44,14 +41,14 @@ export default function Resume() {
               <ProfileFact label="Location" value={personalInfo.location} />
               <ProfileFact label="Availability" value={personalInfo.availability} />
               <ProfileFact
-                label="Best for"
-                value="Case studies, experiments, internships, and a more polished personal brand."
+                label="Looking for"
+                value="Internships, entry-level roles, and opportunities to grow through real project experience."
               />
             </div>
 
             <div className="mt-8 rounded-[1.5rem] border border-[var(--color-border)] bg-[rgba(255,255,255,0.03)] p-5">
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-text-dim)]">
-                Current direction
+                Professional summary
               </p>
               <p className="mt-3 max-w-2xl text-[var(--color-text-muted)]">
                 {personalInfo.status}
@@ -72,12 +69,11 @@ export default function Resume() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-[var(--color-text)]">
-                    What this section now does better
+                    Profile overview
                   </h3>
                   <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-                    It keeps the page polished even before you add a real resume
-                    PDF, and it gives people enough context to know whether they
-                    should reach out.
+                    This section gives a clean summary of who I am, what I am
+                    looking for, and how to get in touch for professional opportunities.
                   </p>
                 </div>
               </div>
@@ -91,7 +87,7 @@ export default function Resume() {
                 </div>
                 <div className="flex items-center gap-3">
                   <FileStack className="h-4 w-4 text-[var(--color-secondary)]" />
-                  Full resume can be shared on request
+                  Resume can be shared on request
                 </div>
               </div>
 

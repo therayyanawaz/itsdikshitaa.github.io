@@ -97,12 +97,9 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
         >
           <span className="section-kicker">Contact</span>
-          <h2 className="section-title">
-            A simple contact flow that feels calm and direct.
-          </h2>
+          <h2 className="section-title">Get In Touch</h2>
           <p className="section-subtitle">
-            No clutter, no fake social links, no broken contact details. Just a
-            cleaner way for people to reach out.
+            If you would like to discuss an opportunity, collaboration, or project, feel free to reach out.
           </p>
         </motion.div>
 
@@ -253,7 +250,7 @@ export default function Contact() {
             <InfoCard
               icon={<Clock3 className="h-5 w-5 text-[var(--color-secondary)]" />}
               title="Response style"
-              description="Clear, friendly replies with enough detail to keep the conversation moving."
+              description="Professional, clear, and timely communication whenever possible."
             />
 
             {socialLinks.length > 0 && (

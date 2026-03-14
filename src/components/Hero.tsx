@@ -82,12 +82,7 @@ export default function Hero() {
           <div className="absolute -right-4 bottom-10 hidden h-20 w-20 rounded-full bg-[rgba(141,161,124,0.14)] blur-2xl sm:block" />
 
           <div className="panel relative overflow-hidden p-6 sm:p-8">
-            <div className="absolute right-5 top-5 flex items-center gap-2 rounded-full border border-[var(--color-border)] px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--color-text-dim)]">
-              <Sparkles className="h-3.5 w-3.5 text-[var(--color-accent)]" />
-              Refined direction
-            </div>
-
-            <div className="flex items-start justify-between gap-4">
+            <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
               <div>
                 <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-text-dim)]">
                   Visual signature
@@ -97,14 +92,21 @@ export default function Hero() {
                 </h2>
               </div>
 
-              <div className="animate-float-slow rounded-[1.6rem] border border-[var(--color-border)] bg-[rgba(255,255,255,0.04)] px-4 py-3 text-right">
-                <span className="block text-xs uppercase tracking-[0.18em] text-[var(--color-text-dim)]">
-                  Based in
-                </span>
-                <span className="mt-1 inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
-                  <MapPin className="h-4 w-4 text-[var(--color-accent-soft)]" />
-                  {personalInfo.location}
-                </span>
+              <div className="flex flex-col gap-3 md:items-end">
+                <div className="inline-flex w-fit items-center gap-2 rounded-full border border-[var(--color-border)] px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--color-text-dim)] md:self-end">
+                  <Sparkles className="h-3.5 w-3.5 text-[var(--color-accent)]" />
+                  Refined direction
+                </div>
+
+                <div className="animate-float-slow w-fit rounded-[1.6rem] border border-[var(--color-border)] bg-[rgba(255,255,255,0.04)] px-4 py-3 text-left md:self-end md:text-right">
+                  <span className="block text-xs uppercase tracking-[0.18em] text-[var(--color-text-dim)]">
+                    Based in
+                  </span>
+                  <span className="mt-1 inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                    <MapPin className="h-4 w-4 text-[var(--color-accent-soft)]" />
+                    {personalInfo.location}
+                  </span>
+                </div>
               </div>
             </div>
 

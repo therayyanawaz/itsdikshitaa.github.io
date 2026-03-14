@@ -31,13 +31,10 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
         >
           <span className="section-kicker">Projects</span>
-          <h2 className="section-title">
-            Selected work slots with room for real stories.
-          </h2>
+          <h2 className="section-title">Selected Projects</h2>
           <p className="section-subtitle">
-            The structure below is ready for case studies, process notes, and
-            more expressive presentation once you swap the sample copy with your
-            actual projects.
+            A selection of project spaces designed to present practical work,
+            technical growth, and problem-solving ability.
           </p>
         </motion.div>
 
@@ -126,7 +123,7 @@ function ProjectCard({
           className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-text)] hover:text-[var(--color-accent-soft)]"
           aria-label={`View details for ${project.title}`}
         >
-          Read the project note
+          View details
           <ChevronRight className="h-4 w-4" aria-hidden="true" />
         </button>
       </div>
@@ -238,7 +235,7 @@ function ProjectModal({
 
             <div className="mt-6">
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-text-dim)]">
-                Suggested stack or focus
+                Technology & focus
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {project.tech.map((tech) => (
@@ -254,7 +251,7 @@ function ProjectModal({
             {project.note && (
               <div className="panel-alt p-5">
                 <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-text-dim)]">
-                  Placement note
+                  Project note
                 </p>
                 <p className="mt-3 text-sm text-[var(--color-text-muted)]">
                   {project.note}
@@ -264,20 +261,20 @@ function ProjectModal({
 
             <div className="panel-alt p-5">
               <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-text-dim)]">
-                What makes this section useful
+                Professional value
               </p>
               <ul className="mt-3 space-y-3 text-sm text-[var(--color-text-muted)]">
                 <li className="flex items-start gap-2">
                   <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-accent-soft)]" />
-                  A clear role and outcome make the story stronger.
+                  Clear objectives and outcomes make each project stronger.
                 </li>
                 <li className="flex items-start gap-2">
                   <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-accent-soft)]" />
-                  Screenshots, process sketches, or metrics will add credibility.
+                  Screenshots, demos, or measurable results add credibility.
                 </li>
                 <li className="flex items-start gap-2">
                   <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-accent-soft)]" />
-                  Keep the explanation concise, then let visuals do the work.
+                  Concise explanation helps the work stay clear and professional.
                 </li>
               </ul>
             </div>
