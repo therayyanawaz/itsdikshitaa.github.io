@@ -63,7 +63,7 @@ export default function About() {
                   </span>
                   <span className="inline-flex items-center gap-2">
                     <Sparkles className="h-4 w-4 text-[var(--color-secondary)]" />
-                    {personalInfo.availability}
+                    Frontend development and interface design
                   </span>
                 </div>
               </div>

@@ -41,8 +41,8 @@ export default function Resume() {
               <ProfileFact label="Location" value={personalInfo.location} />
               <ProfileFact label="Availability" value={personalInfo.availability} />
               <ProfileFact
-                label="Looking for"
-                value="Internships, entry-level roles, and opportunities to grow through real project experience."
+                label="Current focus"
+                value="Hands-on product work, supportive teams, and opportunities to keep improving through real project experience."
               />
             </div>
 

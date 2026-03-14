@@ -60,7 +60,7 @@ export default function Footer() {
           <p>
             {new Date().getFullYear()} {personalInfo.name}
           </p>
-          <p>Available for internships, entry-level roles, and collaborations.</p>
+          <p>Focused on frontend work, thoughtful UI, and continuous growth.</p>
         </div>
       </div>
     </footer>
