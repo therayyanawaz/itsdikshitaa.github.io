@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, Download, MapPin, Sparkles } from "lucide-react";
 import { personalInfo } from "@/lib/data";
 
 export default function Hero() {
@@ -55,6 +55,18 @@ export default function Hero() {
             <a href="#contact" className="btn-secondary">
               Start a Conversation
             </a>
+            {personalInfo.resumeUrl && (
+              <a
+                href={personalInfo.resumeUrl}
+                download="resume.pdf"
+                className="btn-download group"
+                id="resume-download-hero"
+                aria-label="Download resume as PDF"
+              >
+                <Download className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-[2px]" />
+                Resume
+              </a>
+            )}
           </motion.div>
 
           <motion.div

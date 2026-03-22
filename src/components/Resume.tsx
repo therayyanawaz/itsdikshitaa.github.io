@@ -2,7 +2,15 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ArrowRight, BriefcaseBusiness, FileStack, MapPin } from "lucide-react";
+import {
+  ArrowRight,
+  BriefcaseBusiness,
+  Download,
+  FileStack,
+  FileText,
+  MapPin,
+  Sparkles,
+} from "lucide-react";
 import { personalInfo } from "@/lib/data";
 
 export default function Resume() {
@@ -87,23 +95,68 @@ export default function Resume() {
                 </div>
                 <div className="flex items-center gap-3">
                   <FileStack className="h-4 w-4 text-[var(--color-secondary)]" />
-                  Resume can be shared on request
+                  Resume available for download
                 </div>
               </div>
 
               <div className="mt-6 flex flex-wrap gap-3">
-                {personalInfo.resumeUrl ? (
-                  <a href={personalInfo.resumeUrl} className="btn-primary">
-                    View resume
-                  </a>
-                ) : (
-                  <a href="#contact" className="btn-primary">
-                    Contact Dikshita
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                  </a>
-                )}
+                <a href="#contact" className="btn-secondary">
+                  Contact Dikshita
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </a>
               </div>
             </div>
+
+            {/* ── Resume download card ── */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={isInView ? { opacity: 1, y: 0 } : undefined}
+              transition={{ delay: 0.34, duration: 0.55 }}
+              className="resume-download-card panel overflow-hidden"
+            >
+              {/* Decorative gradient strip */}
+              <div className="h-1 w-full bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-accent-soft)] to-[var(--color-secondary)]" />
+
+              <div className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="resume-icon-wrapper flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl">
+                    <FileText className="h-5.5 w-5.5 text-[var(--color-accent)]" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-base font-semibold text-[var(--color-text)]">
+                      Download Resume
+                    </h3>
+                    <p className="mt-1 text-sm text-[var(--color-text-dim)]">
+                      PDF · Updated 2026
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <a
+                    href={personalInfo.resumeUrl}
+                    download="resume.pdf"
+                    className="btn-download group"
+                    id="resume-download-profile"
+                    aria-label="Download Dikshita Konwar's resume as PDF"
+                  >
+                    <Download className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-[2px]" />
+                    Download PDF
+                  </a>
+                  <a
+                    href={personalInfo.resumeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary text-sm"
+                    id="resume-view-profile"
+                    aria-label="View Dikshita Konwar's resume in a new tab"
+                  >
+                    <Sparkles className="h-3.5 w-3.5" />
+                    View Online
+                  </a>
+                </div>
+              </div>
+            </motion.div>
           </motion.aside>
         </div>
       </div>

@@ -48,7 +48,7 @@ export const personalInfo = {
   ],
   location: "India",
   email: "",
-  resumeUrl: "",
+  resumeUrl: "/resume.pdf",
   avatarUrl: "/images/avatar-placeholder.svg",
   availability:
     "Open to internships, entry-level opportunities, and meaningful collaborations.",

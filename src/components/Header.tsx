@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Download, Menu, Moon, Sun, X } from "lucide-react";
 import { navLinks, personalInfo } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
@@ -111,6 +111,17 @@ export default function Header() {
         </ul>
 
         <div className="flex items-center gap-2">
+          {personalInfo.resumeUrl && (
+            <a
+              href={personalInfo.resumeUrl}
+              download="resume.pdf"
+              className="hidden sm:flex h-11 w-11 items-center justify-center rounded-full border border-[rgba(211,122,74,0.25)] bg-[rgba(211,122,74,0.06)] text-[var(--color-accent)] hover:bg-[rgba(211,122,74,0.12)] hover:border-[rgba(211,122,74,0.4)] hover:text-[var(--color-accent-soft)]"
+              aria-label="Download resume"
+              id="resume-download-header"
+            >
+              <Download className="h-4 w-4" aria-hidden="true" />
+            </a>
+          )}
           <button
             onClick={toggleTheme}
             className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-border)] bg-[rgba(255,255,255,0.03)] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
