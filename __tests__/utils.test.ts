@@ -7,7 +7,7 @@ describe('Utility Functions', () => {
         });
 
         it('ignores false, null, and undefined values', () => {
-             expect(cn('btn', false && 'active', null, undefined, 'primary')).toBe('btn primary');
+            expect(cn('btn', false && 'active', null, undefined, 'primary')).toBe('btn primary');
         });
     });
 
@@ -34,7 +34,7 @@ describe('Utility Functions', () => {
         it('returns true when string length is within bounds', () => {
             expect(isValidLength('hello', 3, 10)).toBe(true);
         });
-        
+
         it('returns false when string is too short or too long', () => {
             expect(isValidLength('hi', 3, 10)).toBe(false);
             expect(isValidLength('this is too long', 3, 10)).toBe(false);
@@ -44,8 +44,8 @@ describe('Utility Functions', () => {
     describe('formatDate()', () => {
         it('formats the date string into month and year', () => {
             // Note: Output might vary slightly by locale, but en-US should be consistent on standard environments
-            expect(formatDate('2024-05-15')).toContain('May');
-            expect(formatDate('2024-05-15')).toContain('2024');
+            expect(formatDate('2025-05-15')).toContain('May');
+            expect(formatDate('2025-05-15')).toContain('2025');
         });
     });
 });

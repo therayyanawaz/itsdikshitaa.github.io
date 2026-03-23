@@ -106,13 +106,13 @@ export const projects: Project[] = [
     long: "PassVault is a zero-backend, privacy-first password generator you can host anywhere. It is designed to be secure and easy to use without relying on external servers.",
     tech: ["HTML", "CSS", "JavaScript"],
     repo: "https://github.com/itsdikshitaa/PassVault",
-    live: "https://itsdikshitaa.github.io/PassVault/",
+    live: "https://vault.dikshitaa.tech/",
     tags: ["privacy", "security"],
     note: "A privacy-focused password generation tool.",
   },
   {
     id: "blueborne-scanner",
-    year: "2024",
+    year: "2025",
     title: "Blueborne Scanner",
     short:
       "A Python-based Bluetooth vulnerability scanner that detects devices susceptible to the BlueBorne exploit.",
